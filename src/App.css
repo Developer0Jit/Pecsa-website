@@ -1,0 +1,9 @@
+.border-line::after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 6px;
+  background-color: #312e43;
+  margin-top: 0.5rem;
+}
+

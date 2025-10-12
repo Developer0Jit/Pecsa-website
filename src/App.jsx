@@ -1,0 +1,26 @@
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
+import Home from "./pages/Home/Home";
+import VisionMission from "./pages/Vision/VisionMission";
+import AboutUs from "./pages/About/AboutUs";
+import Footer from "./components/navbar/Footer";
+
+function App() {
+  return (
+    <div className='' style={{background:"#dfdfdf", margin:'0 25px'}}>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/vision-mission" element={<VisionMission />} />
+        <Route path="/about-us" element={<AboutUs />} />
+      </Routes>
+      <Footer/>
+    </Router>
+    </div>
+  );
+}
+
+export default App;
+
