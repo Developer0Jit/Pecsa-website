@@ -1,0 +1,96 @@
+.company-values {
+  background-color: #312e43;
+  color: white;
+}
+
+.header-section {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-section h1 {
+  line-height: 1.2;
+}
+
+.underline {
+  height: 6px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+/* Value Cards */
+.value-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Icon Styling */
+.icon-wrapper {
+  background: linear-gradient(135deg, #7b68ee, #9b59b6);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.icon-wrapper:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(155, 89, 182, 0.6);
+}
+
+/* Text Styling */
+.value-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.value-desc {
+  font-size: 1.1rem;
+  color: #dddddd;
+  max-width: 700px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .value-card {
+    text-align: center;
+  }
+
+  .icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .value-icon {
+    font-size: 2rem;
+  }
+
+  .value-title {
+    font-size: 1.5rem;
+  }
+
+  .value-desc {
+    font-size: 1rem;
+  }
+
+  .underline {
+    width: 80px;
+  }
+}

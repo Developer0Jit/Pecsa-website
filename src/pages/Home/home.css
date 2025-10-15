@@ -1,28 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
-.wave-top {
+.home-container {
+  background: linear-gradient(135deg, #dfdfdf 40%, #f3f3f3 100%);
+  color: #1a1a1a;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- Top Section --- */
+.top-banner {
+  border-bottom: 3px solid #312e43;
+}
+
+.brand-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #312e43;
+  letter-spacing: 1px;
+}
+
+/* --- Wave Designs --- */
+.wave-top,
+.wave-bottom {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #312e43;
+}
+
+.wave-top::before,
+.wave-bottom::before {
+  content: "";
   position: absolute;
-  top: -40px;
-  left: -40px;
-  width: 300px;
-  height: 300px;
-  background-image: radial-gradient(circle, #555 1px, transparent 1px);
-  background-size: 6px 6px;
-  mask-image: radial-gradient(circle at bottom right, transparent 50%, black 100%);
-  opacity: 0.15;
-  transform: rotate(25deg);
+  width: 100%;
+  height: 40px;
+  background: radial-gradient(circle at 50% 0%, #dfdfdf 25%, transparent 26%);
+  background-size: 40px 40px;
 }
 
 .wave-bottom {
-  /* position: absolute; */
-  bottom: -60px;
-  right: -60px;
-  width: 320px;
-  height: 320px;
-  background-image: radial-gradient(circle, #555 1px, transparent 1px);
-  background-size: 6px 6px;
-  mask-image: radial-gradient(circle at top left, transparent 50%, black 100%);
-  opacity: 0.15;
-  transform: rotate(-25deg);
+  background: #312e43;
+  height: 40px;
+  border-radius: 0;
+}
+.wave-bottom::before {
+  background: radial-gradient(circle at 50% 100%, #dfdfdf 25%, transparent 26%);
+  background-size: 40px 40px;
+}
+
+/* --- Company Profile Section --- */
+.company-profile .underline {
+  width: 120px;
+  height: 5px;
+  background-color: #312e43;
+  margin: 10px auto;
+}
+
+.text-accent {
+  color: #312e43 !important;
+}
+
+.tagline {
+  color: #4a4a4a;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* --- Year & Logo Section --- */
+.year-section {
+  display: flex;
+  justify-content: center;
+}
+
+.year-content {
+  background: linear-gradient(90deg, #312e43, #464266);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.year-content:hover {
+  transform: scale(1.02);
+}
+
+.company-logo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.year-numbers h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  color: #ffd369;
+}
+
+/* --- Welcome Section --- */
+.welcome-section {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.welcome-title {
+  font-size: 2.2rem;
+  color: #312e43;
+  font-weight: 600;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.text-accent {
+  color: #ffd369;
+}
+
+/* --- Animation --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .brand-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .company-logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .year-numbers h2 {
+    font-size: 2.2rem;
+  }
+
+  .welcome-title {
+    font-size: 1.8rem;
+  }
+
+  .wave-top,
+  .wave-bottom {
+    height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome-title {
+    font-size: 1.4rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+  }
+
+  .underline {
+    width: 90px;
+  }
+
+  .year-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }

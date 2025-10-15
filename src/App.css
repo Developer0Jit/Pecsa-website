@@ -7,3 +7,10 @@
   margin-top: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .border-line {
+    display: flex;
+    justify-content: center;
+    align-self: center;        
+  }
+}

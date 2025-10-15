@@ -1,0 +1,114 @@
+.future-projects-container {
+  background: linear-gradient(135deg, #312e43 40%, #262338 100%);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* --- Title Section --- */
+.title-section {
+  margin-top: 50px;
+}
+
+.title-content {
+  position: relative;
+  text-align: center;
+}
+
+.fade-in-text {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+.fade-in-text.delay {
+  animation-delay: 0.3s;
+}
+
+.title-underline {
+  border-bottom: 5px solid #fff;
+  width: 150px;
+  margin: 15px auto;
+}
+
+/* --- Project Cards --- */
+.project-section {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+.project-title {
+  color: #ffd369;
+  font-size: 2rem;
+}
+
+.project-title span {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.text-accent {
+  color: #ffd369;
+  font-weight: 600;
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(145deg, rgba(49, 46, 67, 0.9), rgba(32, 30, 46, 0.9));
+}
+
+/* --- Animations --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+  .project-title {
+    font-size: 1.8rem;
+  }
+
+  .future-projects-container {
+    padding: 2rem 1rem;
+  }
+
+  .project-section {
+    margin: 1rem 0;
+  }
+
+  .title-content h1 {
+    font-size: 3rem;
+  }
+
+  .title-underline {
+    width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .project-section {
+    padding: 1.5rem;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  li {
+    font-size: 0.95rem;
+  }
+}

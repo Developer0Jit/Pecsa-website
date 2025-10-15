@@ -1,0 +1,157 @@
+/* Page Base */
+.vision-mission-page {
+  background-color: #312e43;
+  color: #dfdfdf;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Title Section */
+.title-section {
+  padding-top: 40px;
+  animation: fadeInDown 1s ease;
+}
+
+.text-gradient {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-underline {
+  width: 225px;
+  height: 5px;
+  background: linear-gradient(90deg, #8a2be2, #e94057);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.title-section:hover .title-underline {
+  width: 140px;
+}
+
+/* Section Styling */
+.content-section {
+  border-left: 4px solid #8a2be2;
+  padding-left: 30px;
+  transition: all 0.3s ease;
+}
+
+.content-section:hover {
+  border-left: 4px solid #e94057;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  transform: translateY(-4px);
+}
+
+/* Icon Circle */
+.icon-circle {
+  background: linear-gradient(135deg, #8a2be2, #e94057);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icon-circle:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 0 20px rgba(233, 64, 87, 0.5);
+}
+
+/* Section Header */
+.section-header h3 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* Section Text */
+.section-text {
+  font-size: 1.2rem;
+  color: #cfcfe0;
+  line-height: 1.8;
+  text-align: justify;
+  animation: fadeInUp 1s ease;
+}
+
+/* Mission List */
+.section-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  color: #bdbccf;
+  line-height: 1.8;
+}
+
+.section-list li {
+  margin-bottom: 15px;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.section-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #e94057;
+  font-size: 1.5rem;
+  top: 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .content-section {
+    border-left: none;
+    border-top: 4px solid #8a2be2;
+    padding: 20px;
+  }
+
+  .section-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .section-list {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+  }
+
+  .icon-circle {
+    width: 55px;
+    height: 55px;
+  }
+}
