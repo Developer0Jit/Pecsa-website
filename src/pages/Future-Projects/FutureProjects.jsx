@@ -6,7 +6,7 @@ export default function FutureProjects() {
     <main className="future-projects-container container-fluid min-vh-100 py-5 px-3">
       {/* Title Section */}
       <section className="title-section text-center text-md-start d-flex justify-content-center">
-        <div className="title-content mt-3">
+        <div className="title-content">
           <h1 className="fw-bold display-2 fade-in-text">FUTURE</h1>
           <h1 className="fw-bold display-2 fade-in-text delay">PROJECTS</h1>
           <div className="title-underline"></div>

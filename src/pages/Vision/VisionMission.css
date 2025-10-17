@@ -18,17 +18,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.title-underline {
-  width: 225px;
+.mission-underline {
+  width: 250px;
   height: 5px;
-  background: linear-gradient(90deg, #8a2be2, #e94057);
+  background: white;
   border-radius: 4px;
   transition: width 0.5s ease;
 }
 
-.title-section:hover .title-underline {
-  width: 140px;
-}
 
 /* Section Styling */
 .content-section {

@@ -5,9 +5,9 @@ export default function VisionMission() {
     <main className="vision-mission-page container-fluid px-4 py-5">
       {/* Title Section */}
       <div className="title-section text-center mb-5">
-        <h1 className="fw-bold display-4 text-gradient mb-1">VISION</h1>
-        <h1 className="fw-bold display-4 text-gradient mb-3">MISSION</h1>
-        <div className="title-underline mx-auto"></div>
+        <h1 className="fw-bold display-4  mb-1">VISION</h1>
+        <h1 className="fw-bold display-4 mb-3">MISSION</h1>
+        <div className="mission-underline mx-auto"></div>
       </div>
 
       {/* Vision Section */}

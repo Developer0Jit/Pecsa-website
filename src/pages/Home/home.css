@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 .home-container {
   background: linear-gradient(135deg, #dfdfdf 40%, #f3f3f3 100%);
@@ -51,10 +50,9 @@
 
 /* --- Company Profile Section --- */
 .company-profile .underline {
-  width: 120px;
+  width: 275px;
   height: 5px;
   background-color: #312e43;
-  margin: 10px auto;
 }
 
 .text-accent {
@@ -155,6 +153,7 @@
     height: 30px;
   }
 }
+
 
 @media (max-width: 576px) {
   .welcome-title {

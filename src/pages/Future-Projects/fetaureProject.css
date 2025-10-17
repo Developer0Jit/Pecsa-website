@@ -24,7 +24,7 @@
 
 .title-underline {
   border-bottom: 5px solid #fff;
-  width: 150px;
+  width: 375px;
   margin: 15px auto;
 }
 
@@ -57,7 +57,11 @@
 }
 
 .bg-dark-gradient {
-  background: linear-gradient(145deg, rgba(49, 46, 67, 0.9), rgba(32, 30, 46, 0.9));
+  background: linear-gradient(
+    145deg,
+    rgba(49, 46, 67, 0.9),
+    rgba(32, 30, 46, 0.9)
+  );
 }
 
 /* --- Animations --- */
@@ -82,16 +86,18 @@
     padding: 2rem 1rem;
   }
 
+  .title-underline {
+    border-bottom: 5px solid #fff;
+    width: 255px;
+    margin: 15px auto;
+  }
+
   .project-section {
     margin: 1rem 0;
   }
 
   .title-content h1 {
     font-size: 3rem;
-  }
-
-  .title-underline {
-    width: 100px;
   }
 }
 
@@ -102,6 +108,12 @@
 
   .project-section {
     padding: 1.5rem;
+  }
+
+  .title-underline {
+    border-bottom: 5px solid #fff;
+    width: 155px;
+    margin: 15px auto;
   }
 
   ul {

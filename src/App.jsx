@@ -7,6 +7,8 @@ import AboutUs from "./pages/About/AboutUs";
 import Footer from "./components/navbar/Footer";
 import FutureProjects from "./pages/Future-Projects/FutureProjects";
 import CompanyValues from "./pages/Company-Values/CompanyValues";
+import VisitUs from "./pages/Visit-us/VisitUs.JSX";
+import OurLeaders from "./pages/Our-Leaders/OurLeaders";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/company-value" element={<CompanyValues />} />
         <Route path="/future-project" element={<FutureProjects />} />
+        <Route path="/visit-us" element={<VisitUs />} />
+        <Route path="/our-leaders" element={<OurLeaders />} />
       </Routes>
       <Footer/>
     </Router>

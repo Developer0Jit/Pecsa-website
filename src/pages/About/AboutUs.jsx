@@ -6,9 +6,9 @@ export default function AboutUs() {
       <div className="row w-100 align-items-center px-md-5">
         {/* LEFT CONTENT */}
         <div className="col-lg-6 col-md-12 mb-5 text-center text-lg-start fade-in">
-          <h1 className="display-4 mb-0 text-gradient">ABOUT</h1>
+          <h1 className="display-4 mb-0">ABOUT</h1>
           <h1 className="fw-bold display-4 mb-3 text-gradient">US</h1>
-          <div className="underline mb-4 mx-auto mx-lg-0"></div>
+          <div className="about-underline mb-4 mx-auto mx-lg-0"></div>
 
           {/* Quote Box */}
           <article className="quote-box position-relative mt-md-5 mt-4 p-4 p-md-5">
@@ -32,21 +32,21 @@ export default function AboutUs() {
       {/* TEXT SECTION */}
       <div className="row mt-5 w-100 justify-content-center fade-in-slow">
         <div className="col-lg-8 col-md-10 text-center text-lg-start about-text">
-          <p className="fs-5">
+          <p className="fs-5  mt-2 pt-4">
             <strong>PECSA IT Solutions</strong> is a forward-thinking technology
             company dedicated to helping businesses harness the power of
             innovation. We create smart, scalable, and secure digital solutions
             designed to make operations smoother, compliance simpler, and growth
             faster.
           </p>
-          <p className="fs-5">
+          <p className="fs-5 pt-4">
             Founded with the belief that technology should work for people, not
             the other way around, PECSA has grown into a trusted partner for
             over <strong>250 organizations</strong> across Maharashtra. We focus
             on understanding your challenges deeply, then tailoring our
             solutions to fit your exact needs.
           </p>
-          <p className="fs-5">
+          <p className="fs-5 pt-4">
             Our approach blends industry expertise, cutting-edge technology, and
             a commitment to long-term relationships — ensuring that you don’t
             just adopt software but achieve measurable business success.

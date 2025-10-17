@@ -32,7 +32,7 @@ export default function CompanyValues() {
         <div>
           <h1 className="display-3">Company</h1>
           <h1 className="fw-bold display-2">Values</h1>
-          <div className="underline"></div>
+          <div className="underline m-auto"></div>
         </div>
       </div>
 

@@ -6,6 +6,7 @@ export default function Navbar() {
     `nav-link px-3 nav-custom-link ${
       isActive ? "active-link fw-semibold" : ""
     }`;
+    
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow sticky-top custom-navbar py-2">
@@ -33,7 +34,10 @@ export default function Navbar() {
         </button>
 
         {/* Navbar Links */}
-        <div className="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="mainNavbar"
+        >
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink to="/" className={linkStyle} end>
@@ -58,6 +62,16 @@ export default function Navbar() {
             <li className="nav-item">
               <NavLink to="/future-project" className={linkStyle}>
                 Future Projects
+              </NavLink>
+            </li>
+             <li className="nav-item">
+              <NavLink to="/our-leaders" className={linkStyle}>
+                Our Leaders
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/visit-us" className={linkStyle}>
+                Visit US
               </NavLink>
             </li>
           </ul>
